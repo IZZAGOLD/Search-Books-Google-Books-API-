@@ -1,0 +1,14 @@
+.wrapper {
+    padding: 10px;
+    width: 75%;
+    height: 20%;
+    display: flex;
+}
+
+.wrapper__cover {
+    margin-right: 10px;
+}
+
+ul {
+    list-style: none;
+}

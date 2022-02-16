@@ -1,0 +1,17 @@
+.wrapper {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+
+}
+
+.wrapper:hover {
+    border: 1px solid #40a9ff;
+}
+
+.title {
+    font-weight: bold;
+}

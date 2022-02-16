@@ -1,0 +1,21 @@
+.search {
+    display: flex;
+    margin-top: 5px;
+
+}
+
+.sort {
+    margin: 5px;
+}
+
+.wrapper__sort {
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 500px) {
+    .wrapper__sort {
+        display: flex;
+        flex-direction: column;
+    }
+}
