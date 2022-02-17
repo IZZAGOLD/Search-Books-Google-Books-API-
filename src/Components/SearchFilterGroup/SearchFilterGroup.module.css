@@ -1,21 +1,27 @@
 .search {
     display: flex;
-    margin-top: 5px;
-
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .sort {
-    margin: 5px;
+    padding-top: 5px;
 }
 
 .wrapper__sort {
     display: flex;
+    gap: 5px;
     justify-content: center;
 }
 
 @media (max-width: 500px) {
+    .search input {
+       width: 195px;
+    }
     .wrapper__sort {
         display: flex;
         flex-direction: column;
+        align-items: center;
     }
 }

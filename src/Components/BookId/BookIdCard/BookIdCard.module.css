@@ -12,3 +12,14 @@
 ul {
     list-style: none;
 }
+
+@media (max-width: 500px) {
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .description .authors .categories .title {
+        font-size: 12px;
+    }
+}

@@ -1,7 +1,8 @@
 import React, {useState} from 'react'
 import cl from './SearchFilterGroup.module.css'
-import {Button, Input, Select} from 'antd'
+import {Button, Input, Select, Tooltip} from 'antd'
 import {useActions} from '../../hooks/useActions'
+import {SearchOutlined} from "@ant-design/icons";
 
 const {Option} = Select
 
@@ -44,18 +45,24 @@ const SearchFilterGroup = ({setQueryParams, navigate}) => {
     return (
         <div>
             <div className={cl.search}>
+                <div className={cl.search__input}>
                 <Input
                     onKeyDown={handleKeyDown}
                     onChange={handleChangeInput}
                     placeholder='Search'
                 />
-                <Button
-                    size={'large'}
-                    type='primary'
-                    onClick={handleChangeButtonSearch}
-                    disabled={!query.length}>
-                    Search
-                </Button>
+                </div>
+                <div className={cl.search__button}>
+                <Tooltip title="search">
+                    <Button
+                            disabled={!query.length}
+                            onClick={handleChangeButtonSearch}
+                            type="primary"
+                            shape="circle"
+                            icon={<SearchOutlined />}
+                            size="large" />
+                </Tooltip>
+                </div>
             </div>
             <div className={cl.wrapper__sort}>
                 <div className={cl.sort}>

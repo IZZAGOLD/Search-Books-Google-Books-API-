@@ -19,7 +19,7 @@ const BookItem = (props) => {
             }
             {book.categories &&
                 <div>
-                    <span>{book.categories[0]}</span>
+                    <span className={cl.categories}>{book.categories[0]}</span>
                 </div>
             }
             <h2
@@ -30,7 +30,8 @@ const BookItem = (props) => {
                 <div>
                     {
                         book.authors.map((author, index) =>
-                            <div key={index}>{author}</div>
+                            <div className={cl.authors}
+                                key={index}>{author}</div>
                         )
                     }
                 </div>
